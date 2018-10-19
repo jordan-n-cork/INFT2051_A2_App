@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- ==========================================================
+     ==========================================================
+    
+       INFT2051 - Assignment 2 
+   Group Y
+       James Rossington    3187654
+       Ylan Ballouka       xxxxxxx
+       Jordan Cork         xxxxxxx
+   
+   The today view is designed to ...
+    
+===========================================================   
+=========================================================== -->
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2_AppProject.TodayView"
+             Title="Today View">
+    
+    <ContentPage.Content>
+        
+        <StackLayout>
+            
+            <Label Text="Placeholder for Today View"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+            <Image Source="egTodayView.png" />      <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
+                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
+                                                        
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

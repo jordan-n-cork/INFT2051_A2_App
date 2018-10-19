@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ExampleImages\egAddHabit.png" />
+    <None Remove="ExampleImages\egAddToDo.png" />
+    <None Remove="ExampleImages\egMonthView.png" />
+    <None Remove="ExampleImages\egTodayView.png" />
+    <None Remove="ExampleImages\egTodayView2.png" />
+    <None Remove="ExampleImages\egTodayView3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="ExampleImages\egAddHabit.png" />
+    <ApplicationDefinition Include="ExampleImages\egAddToDo.png" />
+    <ApplicationDefinition Include="ExampleImages\egMonthView.png" />
+    <ApplicationDefinition Include="ExampleImages\egTodayView.png" />
+    <ApplicationDefinition Include="ExampleImages\egTodayView2.png" />
+    <ApplicationDefinition Include="ExampleImages\egTodayView3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.912540" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AddHabit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MonthView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tasks.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TodayView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
