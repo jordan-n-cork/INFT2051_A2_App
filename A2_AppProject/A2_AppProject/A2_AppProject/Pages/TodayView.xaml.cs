@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace A2_AppProject
+namespace A2_AppProject.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AddHabit : ContentPage
+	public partial class TodayView : ContentPage
 	{
-		public AddHabit ()
+		public TodayView ()
 		{
 			InitializeComponent ();
 		}
-	}
+
+        async void OnMonthViewButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pages.MonthView());
+        }
+    }
 }
