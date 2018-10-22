@@ -27,9 +27,9 @@
     
     <local:TodayView /> <!-- has to be the name of the x.xaml page to load it as content page -->
 
-    <local:Tasks />
+    <local:TasksView />
 
-    <local:AddHabit />
+    <local:HabitsView />
     
 
     <!--    

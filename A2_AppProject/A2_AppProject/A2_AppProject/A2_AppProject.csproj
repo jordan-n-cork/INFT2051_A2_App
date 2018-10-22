@@ -32,16 +32,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddHabit.xaml">
+    <Compile Update="Pages\TasksView.xaml.cs">
+      <DependentUpon>TasksView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AddPages\AddHabit.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MonthView.xaml">
+    <EmbeddedResource Update="Pages\HabitsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Tasks.xaml">
+    <EmbeddedResource Update="Pages\MonthView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TodayView.xaml">
+    <EmbeddedResource Update="Pages\TasksView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\TodayView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
