@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace A2_AppProject
 {
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : Xamarin.Forms.TabbedPage
     {
         public MainPage()
         {
             InitializeComponent();
+
+            On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
 
     }

@@ -1389,14 +1389,14 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F060004
 			public const int cardview_shadow_start_color = 2131099652;
 			
-			// aapt resource value: 0x7F040005
-			public const int colorAccent = 2130968581;
+			// aapt resource value: 0x7F050005
+			public const int colorAccent = 2131034117;
 			
-			// aapt resource value: 0x7F040003
-			public const int colorPrimary = 2130968579;
+			// aapt resource value: 0x7F050003
+			public const int colorPrimary = 2131034115;
 			
-			// aapt resource value: 0x7F040004
-			public const int colorPrimaryDark = 2130968580;
+			// aapt resource value: 0x7F050004
+			public const int colorPrimaryDark = 2131034116;
 			
 			// aapt resource value: 0x7F060027
 			public const int design_bottom_navigation_shadow_color = 2131099687;
@@ -1458,8 +1458,8 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F06003A
 			public const int highlighted_text_material_light = 2131099706;
 			
-			// aapt resource value: 0x7F040002
-			public const int launcher_background = 2130968578;
+			// aapt resource value: 0x7F050002
+			public const int launcher_background = 2131034114;
 			
 			// aapt resource value: 0x7F06003B
 			public const int material_blue_grey_800 = 2131099707;
@@ -2363,23 +2363,23 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
-			// aapt resource value: 0x7F060005
-			public const int egAddHabit = 2131099653;
+			// aapt resource value: 0x7F010002
+			public const int egAddHabit = 2130771970;
 			
-			// aapt resource value: 0x7F060007
-			public const int egAddToDo = 2131099655;
+			// aapt resource value: 0x7F010003
+			public const int egAddToDo = 2130771971;
 			
-			// aapt resource value: 0x7F060004
-			public const int egMonthView = 2131099652;
+			// aapt resource value: 0x7F010004
+			public const int egMonthView = 2130771972;
 			
-			// aapt resource value: 0x7F060002
-			public const int egTodayView = 2131099650;
+			// aapt resource value: 0x7F010005
+			public const int egTodayView = 2130771973;
 			
-			// aapt resource value: 0x7F060003
-			public const int egTodayView2 = 2131099651;
+			// aapt resource value: 0x7F010006
+			public const int egTodayView2 = 2130771974;
 			
-			// aapt resource value: 0x7F060006
-			public const int egTodayView3 = 2131099654;
+			// aapt resource value: 0x7F010007
+			public const int egTodayView3 = 2130771975;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -3423,8 +3423,8 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F0C006A
 			public const int shortcut = 2131492970;
 			
-			// aapt resource value: 0x7F010002
-			public const int sliding_tabs = 2130771970;
+			// aapt resource value: 0x7F020002
+			public const int sliding_tabs = 2130837506;
 			
 			// aapt resource value: 0x7F0C006B
 			public const int smallLabel = 2131492971;
@@ -3501,8 +3501,8 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F0C0083
 			public const int title_template = 2131492995;
 			
-			// aapt resource value: 0x7F010003
-			public const int toolbar = 2130771971;
+			// aapt resource value: 0x7F020003
+			public const int toolbar = 2130837507;
 			
 			// aapt resource value: 0x7F0C0084
 			public const int top = 2131492996;
@@ -3825,11 +3825,11 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;
 			
-			// aapt resource value: 0x7F020002
-			public const int Tabbar = 2130837506;
+			// aapt resource value: 0x7F030002
+			public const int Tabbar = 2130903042;
 			
-			// aapt resource value: 0x7F020003
-			public const int Toolbar = 2130837507;
+			// aapt resource value: 0x7F030003
+			public const int Toolbar = 2130903043;
 			
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
@@ -3847,14 +3847,14 @@ namespace A2_AppProject.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F030002
-			public const int icon = 2130903042;
+			// aapt resource value: 0x7F040002
+			public const int icon = 2130968578;
 			
-			// aapt resource value: 0x7F030003
-			public const int icon_round = 2130903043;
+			// aapt resource value: 0x7F040003
+			public const int icon_round = 2130968579;
 			
-			// aapt resource value: 0x7F030004
-			public const int launcher_foreground = 2130903044;
+			// aapt resource value: 0x7F040004
+			public const int launcher_foreground = 2130968580;
 			
 			static Mipmap()
 			{
@@ -4080,8 +4080,8 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F160006
 			public const int Animation_Design_BottomSheetDialog = 2132148230;
 			
-			// aapt resource value: 0x7F050004
-			public const int AppCompatDialogStyle = 2131034116;
+			// aapt resource value: 0x7F060004
+			public const int AppCompatDialogStyle = 2131099652;
 			
 			// aapt resource value: 0x7F160007
 			public const int Base_AlertDialog_AppCompat = 2132148231;
@@ -4584,11 +4584,11 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F160004
 			public const int CardView_Light = 2132148228;
 			
-			// aapt resource value: 0x7F050002
-			public const int MainTheme = 2131034114;
+			// aapt resource value: 0x7F060002
+			public const int MainTheme = 2131099650;
 			
-			// aapt resource value: 0x7F050003
-			public const int MainTheme_Base = 2131034115;
+			// aapt resource value: 0x7F060003
+			public const int MainTheme_Base = 2131099651;
 			
 			// aapt resource value: 0x7F1600AA
 			public const int Platform_AppCompat = 2132148394;

@@ -18,16 +18,14 @@
 ===========================================================   
 =========================================================== -->
 
+    <!-- There is code in the behind file to place the android tabbedpage at the bottom (default is top of the page)    -->
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:A2_AppProject.Pages"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:A2_AppProject.Pages"
              x:Class="A2_AppProject.MainPage" >
 
-    <!-- instances(?) of content pages making up the tabbed page -->
+    <!-- instances(?) of content pages making up the tabbed page 
 
-    <!-- <local:TodayView />  has to be the name of the x.xaml page to load it as content page 
-
-    <local:TodayView />
+    <local:TodayView />     has to be the name of the x.xaml page to load it as content page 
 
     <local:TasksView />
 
@@ -47,7 +45,7 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="HabitsView">
+    <NavigationPage Title="Habits View">
         <x:Arguments>
             <local:HabitsView />
         </x:Arguments>
