@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.TasksView.xaml", "Pages/TasksView.xaml", typeof(global::A2_AppProject.Tasks))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.TasksView.xaml", "Pages/TasksView.xaml", typeof(global::A2_AppProject.Pages.TasksView))]
 
-namespace A2_AppProject {
+namespace A2_AppProject.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TasksView.xaml")]
-    public partial class Tasks : global::Xamarin.Forms.ContentPage {
+    public partial class TasksView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Tasks));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TasksView));
         }
     }
 }

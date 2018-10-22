@@ -16,7 +16,7 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="A2_AppProject.TodayView"
+             x:Class="A2_AppProject.Pages.TodayView"
              Title="Today View">
     
     <ContentPage.Content>
@@ -25,6 +25,9 @@
             
             <Label Text="Placeholder for Today View"
                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Month View test"
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnMonthViewButtonClicked" />
 
             <Image Source="egTodayView.png" />      <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
                                                          properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->

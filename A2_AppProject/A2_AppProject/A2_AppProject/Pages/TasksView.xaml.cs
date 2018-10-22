@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace A2_AppProject
+namespace A2_AppProject.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Tasks : ContentPage
+	public partial class TasksView : ContentPage
 	{
-		public Tasks ()
+		public TasksView ()
 		{
 			InitializeComponent ();
 		}

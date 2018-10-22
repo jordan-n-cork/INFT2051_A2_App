@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="A2_AppProject.HabitsView">
+             x:Class="A2_AppProject.Pages.HabitsView">
     <ContentPage.Content>
 
         <StackLayout>
 
-            <Label Text="Placeholder for Add Habit"
+            <Label Text="Placeholder for Habits View"
                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
 
             <Image Source="egAddHabit.png" />
+            <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
+                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
+
 
         </StackLayout>
 

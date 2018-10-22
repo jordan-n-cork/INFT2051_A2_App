@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.HabitsView.xaml", "Pages/HabitsView.xaml", typeof(global::A2_AppProject.HabitsView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.HabitsView.xaml", "Pages/HabitsView.xaml", typeof(global::A2_AppProject.Pages.HabitsView))]
 
-namespace A2_AppProject {
+namespace A2_AppProject.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\HabitsView.xaml")]

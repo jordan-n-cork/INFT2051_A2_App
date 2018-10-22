@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.MonthView.xaml", "Pages/MonthView.xaml", typeof(global::A2_AppProject.MonthView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.MonthView.xaml", "Pages/MonthView.xaml", typeof(global::A2_AppProject.Pages.MonthView))]
 
-namespace A2_AppProject {
+namespace A2_AppProject.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\MonthView.xaml")]

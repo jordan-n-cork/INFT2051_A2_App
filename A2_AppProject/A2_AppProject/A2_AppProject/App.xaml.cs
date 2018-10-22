@@ -12,6 +12,7 @@ namespace A2_AppProject
             InitializeComponent();
 
             MainPage = new MainPage();
+            //MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
@@ -28,5 +29,8 @@ namespace A2_AppProject
         {
             // Handle when your app resumes
         }
+
+
+
     }
 }

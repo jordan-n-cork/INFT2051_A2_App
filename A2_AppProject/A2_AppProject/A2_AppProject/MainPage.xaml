@@ -20,32 +20,54 @@
 
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:A2_AppProject"
+             xmlns:local="clr-namespace:A2_AppProject.Pages"
              x:Class="A2_AppProject.MainPage" >
 
     <!-- instances(?) of content pages making up the tabbed page -->
-    
-    <local:TodayView /> <!-- has to be the name of the x.xaml page to load it as content page -->
+
+    <!-- <local:TodayView />  has to be the name of the x.xaml page to load it as content page 
+
+    <local:TodayView />
 
     <local:TasksView />
 
     <local:HabitsView />
-    
 
-    <!--    
-        wraps the content page views in a navigation page (might change back to this )
-    
-        <NavigationPage Title="Month View" Icon="schedule.png">
-            <x:Arguments>
-                <local:MonthView />
-            </x:Arguments>
-        </NavigationPage>
-    
-        <NavigationPage Title="TodayView" Icon="schedule.png">
+    -->
+
+    <NavigationPage Title="Today View">
         <x:Arguments>
             <local:TodayView />
         </x:Arguments>
     </NavigationPage>
+
+    <NavigationPage Title="Tasks">
+        <x:Arguments>
+            <local:TasksView />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="HabitsView">
+        <x:Arguments>
+            <local:HabitsView />
+        </x:Arguments>
+    </NavigationPage>
+
+
+    <!--    
+        wraps the content page views in a navigation page (might change back to this )
+    
+        <NavigationPage Title="Today View">
+        <x:Arguments>
+            <local:TodayView />
+        </x:Arguments>
+    </NavigationPage>
+    
+        <NavigationPage Title="TodayView" Icon="schedule.png">
+            <x:Arguments>
+                <local:TodayView />
+            </x:Arguments>
+        </NavigationPage>
         -->
 
 </TabbedPage>

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.TodayView.xaml", "Pages/TodayView.xaml", typeof(global::A2_AppProject.TodayView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("A2_AppProject.Pages.TodayView.xaml", "Pages/TodayView.xaml", typeof(global::A2_AppProject.Pages.TodayView))]
 
-namespace A2_AppProject {
+namespace A2_AppProject.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TodayView.xaml")]

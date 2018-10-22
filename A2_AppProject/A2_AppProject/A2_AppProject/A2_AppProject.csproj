@@ -38,7 +38,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddPages\AddHabit.xaml">
+    <EmbeddedResource Update="Pages\AddPages\AddHabit.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\AddPages\AddTask.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\HabitsView.xaml">
@@ -53,5 +56,9 @@
     <EmbeddedResource Update="Pages\TodayView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logic\" />
   </ItemGroup>
 </Project>
