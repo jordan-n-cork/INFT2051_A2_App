@@ -15,6 +15,7 @@ namespace A2_AppProject
         {
             InitializeComponent();
 
+                // this is the code to set the android tabbedpage to the bottom of the screen
             On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
 

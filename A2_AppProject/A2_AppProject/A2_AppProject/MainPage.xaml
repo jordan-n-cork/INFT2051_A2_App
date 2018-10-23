@@ -18,7 +18,9 @@
 ===========================================================   
 =========================================================== -->
 
-    <!-- There is code in the behind file to place the android tabbedpage at the bottom (default is top of the page)    -->
+    <!-- There is code in the behind file to place the android tabbedpage at the bottom (default is top of the page)
+        Apparently, Xamarin Live Player throws an error when trying to implement through XAML so this is the workaround
+    -->
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:A2_AppProject.Pages"
              x:Class="A2_AppProject.MainPage" >
@@ -33,39 +35,28 @@
 
     -->
 
-    <NavigationPage Title="Today View">
+    <!-- wraps the content page views in a navigation page -->
+    <NavigationPage Title="Today View" Icon="MonthView.png">            <!-- currently loads icon from the android project Resources/drawable folder with build action set -->
         <x:Arguments>
             <local:TodayView />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Tasks">
+    <NavigationPage Title="Tasks" Icon="TasksViewIcon.png">
         <x:Arguments>
             <local:TasksView />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Habits View">
+    <NavigationPage Title="Habits View" Icon="HabitsView.png">
         <x:Arguments>
             <local:HabitsView />
         </x:Arguments>
     </NavigationPage>
 
 
-    <!--    
-        wraps the content page views in a navigation page (might change back to this )
+   
     
-        <NavigationPage Title="Today View">
-        <x:Arguments>
-            <local:TodayView />
-        </x:Arguments>
-    </NavigationPage>
-    
-        <NavigationPage Title="TodayView" Icon="schedule.png">
-            <x:Arguments>
-                <local:TodayView />
-            </x:Arguments>
-        </NavigationPage>
-        -->
+
 
 </TabbedPage>
