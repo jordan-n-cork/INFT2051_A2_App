@@ -19,8 +19,38 @@
              x:Class="A2_AppProject.Pages.TodayView"
              Title="Today View">
     
+    
     <ContentPage.Content>
-        
+
+        <ScrollView>
+            <StackLayout>
+                
+                <!-- test button to get to month view -->
+                <Button Text="Month View test"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnMonthViewButtonClicked" />
+
+                <!-- test items for list view inside scrollview -->
+                <ListView x:Name="TodayViewList">
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">s
+
+                            <x:String>8am</x:String>
+                            <x:String>9am</x:String>
+                            <x:String>10am</x:String>
+                            <x:String>11am</x:String>
+                            <x:String>12am</x:String>
+                            <x:String>1pm</x:String>
+                            <x:String>2pm</x:String>
+                            <x:String>3pm</x:String>
+
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- 
         <StackLayout>
             
             <Label Text="Placeholder for Today View"
@@ -29,12 +59,14 @@
             <Button Text="Month View test"
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnMonthViewButtonClicked" />
 
-            <Image Source="egTodayView.png" />      <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
-                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
+            <Image Source="egTodayView.png" />       loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
+                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   
                                                         
 
         </StackLayout>
-        
+        -->
     </ContentPage.Content>
+
     
+
 </ContentPage>
