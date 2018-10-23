@@ -3326,7 +3326,7 @@ containing a value of this type.
         public static final int notification_template_icon_low_bg=0x7f020137;
         public static final int notification_tile_bg=0x7f020131;
         public static final int notify_panel_notification_icon_bg=0x7f020132;
-        public static final int tasksviewicon=0x7f020133;
+        public static final int taskslisticon=0x7f020133;
         public static final int tooltip_frame_dark=0x7f020134;
         public static final int tooltip_frame_light=0x7f020135;
     }

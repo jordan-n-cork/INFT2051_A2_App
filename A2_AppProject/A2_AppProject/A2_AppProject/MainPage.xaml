@@ -42,7 +42,7 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="Tasks" Icon="TasksViewIcon.png">
+    <NavigationPage Title="Tasks" Icon="TasksListIcon.png">
         <x:Arguments>
             <local:TasksView />
         </x:Arguments>
