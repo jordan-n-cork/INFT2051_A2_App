@@ -345,11 +345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
+      "projectUniqueName": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
       "projectName": "A2_AppProject",
-      "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
+      "projectPath": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
       "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\obj\\",
+      "outputPath": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
