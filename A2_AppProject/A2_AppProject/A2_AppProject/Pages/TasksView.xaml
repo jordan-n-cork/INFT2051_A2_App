@@ -6,14 +6,29 @@
     
     <ContentPage.Content>
 
+
+
         <StackLayout>
 
-            <Label Text="Placeholder for Tasks"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <ScrollView VerticalOptions="FillAndExpand">    <!-- one problem here is when the listview goes over a certain amount it does not scroll down all the way-->
+                <ListView x:Name="TasksList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+                            <!-- will eventually have the cell be a button to open event details -->
+                            
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            
+            <!-- Test button for list -->
+            <Button Text="AddItem"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
 
-            <Image Source="egAddToDo.png" />
 
         </StackLayout>
+        
 
     </ContentPage.Content>
 </ContentPage>

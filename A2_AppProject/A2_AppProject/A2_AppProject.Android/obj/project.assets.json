@@ -780,11 +780,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
+      "projectUniqueName": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
       "projectName": "A2_AppProject.Android",
-      "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
+      "projectPath": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
       "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\obj\\",
+      "outputPath": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -801,8 +801,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj": {
-              "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj"
+            "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj": {
+              "projectPath": "I:\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj"
             }
           }
         }

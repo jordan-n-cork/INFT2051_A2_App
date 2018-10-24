@@ -3036,7 +3036,7 @@ namespace A2_AppProject.Droid
 			public const int notify_panel_notification_icon_bg = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int TasksViewIcon = 2130837811;
+			public const int TasksListIcon = 2130837811;
 			
 			// aapt resource value: 0x7f020134
 			public const int tooltip_frame_dark = 2130837812;

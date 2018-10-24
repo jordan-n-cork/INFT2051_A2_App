@@ -973,7 +973,7 @@ int drawable notification_template_icon_bg 0x7f020136
 int drawable notification_template_icon_low_bg 0x7f020137
 int drawable notification_tile_bg 0x7f020131
 int drawable notify_panel_notification_icon_bg 0x7f020132
-int drawable tasksviewicon 0x7f020133
+int drawable taskslisticon 0x7f020133
 int drawable tooltip_frame_dark 0x7f020134
 int drawable tooltip_frame_light 0x7f020135
 int id ALT 0x7f090032

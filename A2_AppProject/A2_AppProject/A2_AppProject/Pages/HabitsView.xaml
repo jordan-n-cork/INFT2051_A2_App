@@ -4,17 +4,30 @@
              x:Class="A2_AppProject.Pages.HabitsView">
     <ContentPage.Content>
 
+
+
         <StackLayout>
 
-            <Label Text="Placeholder for Habits View"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <ScrollView VerticalOptions="FillAndExpand">
+                <!-- one problem here is when the listview goes over a certain amount it does not scroll down all the way-->
+                <ListView x:Name="HabitsList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+                            <!-- will eventually have the cell be a button to open event details -->
 
-            <Image Source="egAddHabit.png" />
-            <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
-                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <!-- Test button for list -->
+            <Button Text="AddItem"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
 
 
         </StackLayout>
+
 
     </ContentPage.Content>
 </ContentPage>

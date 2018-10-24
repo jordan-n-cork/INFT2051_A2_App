@@ -19,22 +19,36 @@
              x:Class="A2_AppProject.Pages.TodayView"
              Title="Today View">
     
+    
     <ContentPage.Content>
-        
+
         <StackLayout>
+
             
-            <Label Text="Placeholder for Today View"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                    <!-- test button to get to month view -->
+                    <Button Text="Month View test"              
+                    VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnMonthViewButtonClicked" />
 
-            <Button Text="Month View test"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnMonthViewButtonClicked" />
-
-            <Image Source="egTodayView.png" />      <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
-                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
-                                                        
-
+            <ScrollView VerticalOptions="FillAndExpand"> 
+                        <!-- test items for list view inside scrollview -->
+                <ListView x:Name="TodayViewList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+                
+                    <!-- Test button for list 
+                        <Button Text="AddItem"              
+                        VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
+                    -->
+                
         </StackLayout>
         
     </ContentPage.Content>
+
     
+
 </ContentPage>
