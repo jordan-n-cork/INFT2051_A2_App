@@ -13,7 +13,7 @@
 namespace A2_AppProject.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TasksView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/TasksView.xaml")]
     public partial class TasksView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

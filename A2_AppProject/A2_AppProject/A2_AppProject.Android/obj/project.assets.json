@@ -775,34 +775,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\James\\.nuget\\packages\\": {}
+    "/Users/thejrosso/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
+      "projectUniqueName": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject.Android/A2_AppProject.Android.csproj",
       "projectName": "A2_AppProject.Android",
-      "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\A2_AppProject.Android.csproj",
-      "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject.Android\\obj\\",
+      "projectPath": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject.Android/A2_AppProject.Android.csproj",
+      "packagesPath": "/Users/thejrosso/.nuget/packages/",
+      "outputPath": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject.Android/obj",
       "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thejrosso/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj": {
-              "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj"
+            "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject/A2_AppProject.csproj": {
+              "projectPath": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject/A2_AppProject.csproj"
             }
           }
         }
@@ -811,29 +808,29 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "3.3.0.912540"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
-          },
-          "Xamarin.Android.Support.v4": {
-            "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.AppCompat": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
+          },
+          "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[3.3.0.912540, )"
+            "version": "27.0.2.1"
           }
         }
       }

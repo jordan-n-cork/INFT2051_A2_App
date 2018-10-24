@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{17547DBA-3B53-43B8-8482-757F2BE2A52B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="A2_AppProject/A2_AppProject/Pages/HabitsView.xaml">
+    <Files>
+      <File FileName="A2_AppProject/A2_AppProject/MainPage.xaml" Line="22" Column="64" />
+      <File FileName="A2_AppProject/A2_AppProject/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="A2_AppProject/A2_AppProject/Pages/HabitsView.xaml" Line="12" Column="45" />
+      <File FileName="A2_AppProject/A2_AppProject/Pages/HabitsView.xaml.cs" Line="25" Column="37" />
+      <File FileName="A2_AppProject/A2_AppProject/Pages/TasksView.xaml" Line="33" Column="27" />
+      <File FileName="A2_AppProject/A2_AppProject/Pages/TasksView.xaml.cs" Line="27" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.A2__AppProject.Android PreferredExecutionTarget="Android.SelectDevice" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

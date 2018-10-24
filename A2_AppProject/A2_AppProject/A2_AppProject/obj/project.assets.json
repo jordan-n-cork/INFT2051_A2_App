@@ -339,30 +339,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\James\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/thejrosso/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
+      "projectUniqueName": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject/A2_AppProject.csproj",
       "projectName": "A2_AppProject",
-      "projectPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\A2_AppProject.csproj",
-      "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHubDesktop\\INFT2051_A2_App\\A2_AppProject\\A2_AppProject\\A2_AppProject\\obj\\",
+      "projectPath": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject/A2_AppProject.csproj",
+      "packagesPath": "/Users/thejrosso/.nuget/packages/",
+      "outputPath": "/Users/thejrosso/Documents/GitHub Projects/INFT2051_A2_App/A2_AppProject/A2_AppProject/A2_AppProject/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\James\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thejrosso/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -379,15 +377,15 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "3.3.0.912540"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[2.0.3, )",
+            "version": "2.0.3",
             "autoReferenced": true
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[3.3.0.912540, )"
           }
         },
         "imports": [

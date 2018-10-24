@@ -13,7 +13,7 @@
 namespace A2_AppProject.Pages.AddPages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\AddPages\\AddTask.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/AddPages/AddTask.xaml")]
     public partial class AddTask : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

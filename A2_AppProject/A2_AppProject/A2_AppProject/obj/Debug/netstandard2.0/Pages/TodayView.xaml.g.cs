@@ -13,7 +13,7 @@
 namespace A2_AppProject.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TodayView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/TodayView.xaml")]
     public partial class TodayView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

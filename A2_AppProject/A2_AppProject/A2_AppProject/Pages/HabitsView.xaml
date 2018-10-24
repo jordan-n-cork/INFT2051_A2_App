@@ -1,20 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="A2_AppProject.Pages.HabitsView">
     <ContentPage.Content>
 
+
+
         <StackLayout>
 
-            <Label Text="Placeholder for Habits View"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-
-            <Image Source="egAddHabit.png" />
-            <!-- loads image from /ExampleImage/ folder but also found in Android build > Resources/drawawble 
-                                                         properties is also set to "AndroidResource" for build action so images show up in android emulator/debug device   -->
+            <ScrollView VerticalOptions="FillAndExpand">    <!-- one problem here is when the listview goes over a certain amount it does not scroll down all the way-->
+                <ListView x:Name="HabitsList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+                            <!-- will eventually have the cell be a button to open event details -->
+                            
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            
+            <!-- Test button for list -->
+            <Button Text="AddItem"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
 
 
         </StackLayout>
+        
 
     </ContentPage.Content>
 </ContentPage>

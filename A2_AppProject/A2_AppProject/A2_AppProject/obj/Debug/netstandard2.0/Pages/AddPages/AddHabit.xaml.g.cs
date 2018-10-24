@@ -13,7 +13,7 @@
 namespace A2_AppProject.Pages.AddPages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\AddPages\\AddHabit.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/AddPages/AddHabit.xaml")]
     public partial class AddHabit : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

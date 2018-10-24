@@ -13,7 +13,7 @@
 namespace A2_AppProject.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\MonthView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages/MonthView.xaml")]
     public partial class MonthView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
