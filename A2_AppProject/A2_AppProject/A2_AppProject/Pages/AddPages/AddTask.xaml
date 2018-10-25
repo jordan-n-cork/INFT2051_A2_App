@@ -1,17 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="A2_AppProject.Pages.AddPages.AddTask">
+             x:Class="A2_AppProject.Pages.AddPages.AddTask"
+             Title="Add a Task">
     <ContentPage.Content>
 
         <StackLayout>
 
+            <!-- 
             <Label Text="Placeholder for Add Task"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                    VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            -->
 
-            <Image Source="egAddHabit.png" />
+            <TableView Intent="Form"
+                Margin="10, 0">
+                <TableRoot>
+                    
+                    <TableSection>
+                        <TextCell Text="Text Cell"
+                          Detail="With Detail Text" />
+                    </TableSection>
 
+                    <TableSection Title="Test Table Item">
+                        <SwitchCell Text="Boolean Test" x:Name="testSwitch"  />
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+            
+            <Button Text="Add Task"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
+
+            <Button Text="Alert Test"              
+                        VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAlertYesNoClicked" />
         </StackLayout>
-
+        
+        
     </ContentPage.Content>
 </ContentPage>

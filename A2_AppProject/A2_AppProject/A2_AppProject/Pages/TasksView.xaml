@@ -14,8 +14,15 @@
                 <ListView x:Name="TasksList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
+
                             <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+
                             <!-- will eventually have the cell be a button to open event details -->
+                            
+                            <!-- the hide test elements spot 
+                            
+                            
+                            -->
                             
                         </DataTemplate>
                     </ListView.ItemTemplate>
@@ -23,8 +30,11 @@
             </ScrollView>
             
             <!-- Test button for list -->
-            <Button Text="AddItem"              
+            <Button Text="Add List Item"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
+
+            <Button Text="XAML add item test"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
 
 
         </StackLayout>
