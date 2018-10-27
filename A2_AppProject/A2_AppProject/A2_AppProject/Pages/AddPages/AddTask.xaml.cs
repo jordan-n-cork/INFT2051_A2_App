@@ -23,22 +23,26 @@ namespace A2_AppProject.Pages.AddPages
 
             // test for switch cells
             string switchResult = "";
-            if (testSwitch.On)
+            if (AllDayBool.On)
             {
-                switchResult = "on";
-                
+                switchResult = "All day event";
+                date1Pick.IsVisible = true;
             } else
             {
-                switchResult = "off";
+                switchResult = "Specific Time";
+                date1Pick.IsVisible = false;
             }
 
             DisplayAlert("Alert", "The switch result is " + switchResult, "OK");
- 
+
+            // quick replacement for the above debug code
+            // date1Pick.IsVisible = !date1Pick.IsVisible;
+
             //TasksListData.Add(new Logic.quickListWork() { Name = "Button Made Item", Detail = "additional info goes here" });
-            
+
         }
 
-            // testing a boolean alert result  
+        // testing a boolean alert result  
         async void OnAlertYesNoClicked(object sender, EventArgs e)
         {
             var answer = await DisplayAlert("Question?", "Choose these two", "Yes", "No");

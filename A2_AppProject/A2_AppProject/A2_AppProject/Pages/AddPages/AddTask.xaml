@@ -17,16 +17,27 @@
                 <TableRoot>
                     
                     <TableSection>
-                        <TextCell Text="Text Cell"
-                          Detail="With Detail Text" />
+                        <TextCell x:Name="TaskPreview" Text="Task Preview"
+                          Detail="Task Description Preview" />                  <!-- will hopefully add expanding cells to display event info here -->
+                    </TableSection>
+                    <TableSection Title="Enter event information:">
+                        <EntryCell Label="Event Name: "
+                               Placeholder = "" />
+                        <EntryCell Label="Description: "
+                               Placeholder = "" />
                     </TableSection>
 
-                    <TableSection Title="Test Table Item">
-                        <SwitchCell Text="Boolean Test" x:Name="testSwitch"  />
+                    <TableSection>
+                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool"  />
                     </TableSection>
 
                 </TableRoot>
             </TableView>
+            
+                <!-- intention is for the datepicker to expand when the switch is toggled -->
+            <DatePicker x:Name="date1Pick" Format="D"
+                VerticalOptions="CenterAndExpand"
+                Margin="10, 0" IsVisible="False"/>
             
             <Button Text="Add Task"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
