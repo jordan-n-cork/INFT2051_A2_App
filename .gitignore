@@ -61,3 +61,6 @@ AndroidNative/gradlew.bat
 !EmbeddingTestBeds/Embedding.iOS/*.designer.cs
 # temporary vim files
 *.swp
+A2_AppProject/A2_AppProject/A2_AppProject.Android/obj/Debug/MonoAndroid81/android/assets/Mono.Android.dll
+A2_AppProject/A2_AppProject/A2_AppProject.Android/obj/Debug/MonoAndroid81/build.props
+A2_AppProject/A2_AppProject/A2_AppProject.Android/obj/Debug/MonoAndroid81/build.props
