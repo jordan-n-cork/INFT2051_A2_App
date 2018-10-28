@@ -12,15 +12,31 @@ namespace A2_AppProject.Pages.AddPages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AddTask : ContentPage
 	{
+        // public variables I want to access in the app
+        //string TaskPreviewName;
+        //string TaskPreviewDetail;
+      
+
 		public AddTask ()
 		{
 			InitializeComponent ();
 		}
 
+        public void UpdateTaskPreview ()
+        {
+            // build the string of other entry cells here
+            
+        }
+
         private void OnAddTaskButtonClicked(object sender, EventArgs e)
         {
             // code to test if list is able to add items
 
+
+            /* 
+                various variables in the addtasks page
+                
+             */
             // test for switch cells
             string switchResult = "";
             if (AllDayBool.On)
@@ -35,6 +51,8 @@ namespace A2_AppProject.Pages.AddPages
 
             DisplayAlert("Alert", "The switch result is " + switchResult, "OK");
 
+            
+
             // quick replacement for the above debug code
             // date1Pick.IsVisible = !date1Pick.IsVisible;
 
@@ -43,11 +61,27 @@ namespace A2_AppProject.Pages.AddPages
         }
 
         // testing a boolean alert result  
-        async void OnAlertYesNoClicked(object sender, EventArgs e)
+        void OnUpdateClicked(object sender, EventArgs e)
         {
+
+
+
+
+            /*  testing out double alert answers
             var answer = await DisplayAlert("Question?", "Choose these two", "Yes", "No");
             // Debug.WriteLine("Answer: " + answer);
             await DisplayAlert("Alert", "The alert result is " + answer, "OK");
+            */
+        }
+
+        void onNameEntered(object sender, EventArgs e)
+        {
+            TaskPreview.Text = entryEventName.Text;
+        }
+
+        void onDescEntered(object sender, EventArgs e)
+        {
+            TaskPreview.Detail = entryEventDesc.Text;
         }
 
     }

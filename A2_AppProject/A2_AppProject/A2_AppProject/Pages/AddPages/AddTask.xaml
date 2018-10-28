@@ -20,11 +20,11 @@
                         <TextCell x:Name="TaskPreview" Text="Task Preview"
                           Detail="Task Description Preview" />                  <!-- will hopefully add expanding cells to display event info here -->
                     </TableSection>
-                    <TableSection Title="Enter event information:">
-                        <EntryCell Label="Event Name: "
-                               Placeholder = "" />
-                        <EntryCell Label="Description: "
-                               Placeholder = "" />
+                    <TableSection Title="Enter Event information:">
+                        <EntryCell x:Name="entryEventName" Label="Event Name: "
+                               Placeholder = "" Completed="onNameEntered"/>
+                        <EntryCell x:Name="entryEventDesc" Label="Description: "
+                               Placeholder = "" Completed="onDescEntered"/>
                     </TableSection>
 
                     <TableSection>
@@ -42,8 +42,8 @@
             <Button Text="Add Task"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
 
-            <Button Text="Alert Test"              
-                        VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAlertYesNoClicked" />
+            <Button Text="Update Preview"              
+                        VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnUpdateClicked" />
         </StackLayout>
         
         
