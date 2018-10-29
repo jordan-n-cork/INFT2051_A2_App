@@ -76,12 +76,12 @@ namespace A2_AppProject.Pages.AddPages
 
         void onNameEntered(object sender, EventArgs e)
         {
-            TaskPreview.Text = entryEventName.Text;
+            TaskPreviewTitle.Text = entryEventName.Text;
         }
 
         void onDescEntered(object sender, EventArgs e)
         {
-            TaskPreview.Detail = entryEventDesc.Text;
+            TaskPreviewDetail.Text = entryEventDesc.Text;
         }
 
     }

@@ -7,19 +7,31 @@
 
         <StackLayout>
 
-            <!-- 
-            <Label Text="Placeholder for Add Task"
-                    VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-            -->
+            <!-- attempting to preview the task 'banner' with a listView control tat is affected by c# code -->
 
+            <StackLayout Padding="5"> 
+                <Frame OutlineColor="Accent"
+                                        Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="Blue"
+                                             WidthRequest="50"
+                                             HeightRequest="50" />
+                        <StackLayout>
+                            <Label x:Name="TaskPreviewTitle" Text="test title"
+                                                    FontSize="22"
+                                                    VerticalOptions="StartAndExpand" />
+                            <Label x:Name="TaskPreviewDetail" Text="detail text"
+                                                    FontSize="16"
+                                                    VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
             <TableView Intent="Form"
                 Margin="10, 0">
                 <TableRoot>
                     
-                    <TableSection>
-                        <TextCell x:Name="TaskPreview" Text="Task Preview"
-                          Detail="Task Description Preview" />                  <!-- will hopefully add expanding cells to display event info here -->
-                    </TableSection>
                     <TableSection Title="Enter Event information:">
                         <EntryCell x:Name="entryEventName" Label="Event Name: "
                                Placeholder = "" Completed="onNameEntered"/>
