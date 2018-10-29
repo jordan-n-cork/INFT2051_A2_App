@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="A2_AppProject.Pages.AddPages.EditEvent">
+    <ContentPage.Content>
+        
+        
+        <!-- I want this page to be able to edit events and also convert from task>habit and vice versa -->
+        <StackLayout>
+            <Label Text="Placeholder for editing an event"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

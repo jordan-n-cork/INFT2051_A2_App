@@ -42,5 +42,10 @@ namespace A2_AppProject.Pages
             TasksListData.Add(new Logic.quickListWork() { Name = "Button Made Item", Detail = "additional info goes here" });
 
         }
+
+        async void OnAddTaskButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pages.AddPages.AddTask());
+        }
     }
 }

@@ -15,6 +15,30 @@ namespace A2_AppProject.Pages
 		public MonthView ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+            // test to add a calendar-like grid
+
+
+
+
+
+            /* failed grid code
+            // monthGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            // monthGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            // monthGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            
+            for (int i = 0; i <= 6; i++)
+            {
+                monthGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            }
+
+            for (int i = 0; i <= 3; i++)
+            {
+                monthGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            }
+
+            */
+        }
+    }
 }

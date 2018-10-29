@@ -1,17 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="A2_AppProject.Pages.AddPages.AddTask">
+             x:Class="A2_AppProject.Pages.AddPages.AddTask"
+             Title="Add a Task">
     <ContentPage.Content>
 
         <StackLayout>
 
-            <Label Text="Placeholder for Add Task"
-                VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <!-- attempting to preview the task 'banner' with a listView control tat is affected by c# code -->
 
-            <Image Source="egAddHabit.png" />
+            <StackLayout Padding="5"> 
+                <Frame OutlineColor="Accent"
+                                        Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <BoxView Color="Blue"
+                                             WidthRequest="50"
+                                             HeightRequest="50" />
+                        <StackLayout>
+                            <Label x:Name="TaskPreviewTitle" Text="test title"
+                                                    FontSize="22"
+                                                    VerticalOptions="StartAndExpand" />
+                            <Label x:Name="TaskPreviewDetail" Text="detail text"
+                                                    FontSize="16"
+                                                    VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+            
+            <TableView Intent="Form" HasUnevenRows="True"
+                Margin="10, 0">
+                <TableRoot>
+                    
+                    <TableSection> <!-- custom cell views for the event entries -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Event Name:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventName" HorizontalOptions="FillAndExpand"
+                                    Placeholder = "" ReturnType="Next" Completed="onNameEntered"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Description:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventDesc" HorizontalOptions="FillAndExpand"
+                                       Placeholder = "" ReturnType="Send" Completed="onDescEntered"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection>
+                        
+                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool" On="True" OnChanged="AllDayBool_OnChanged"/>
+                        
+                        <ViewCell>
+                            
+                            <StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Date:" 
+                                           HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="datePick1" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                        Margin="10, 0" IsVisible="True"/>
+                                </StackLayout>
+                            
+                                <StackLayout Orientation="Horizontal" x:Name="datePick2" IsVisible="False">
+                                    <Label Text="Second Date:" 
+                                        HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker  Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                    Margin="10, 0"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                            
+                        
+                    
+            
+
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            
+            
+                <!-- intention is for the datepicker to expand when the switch is toggled -->
+            
+            
+            <Button Text="Add Task"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
 
         </StackLayout>
-
+        
+        
     </ContentPage.Content>
 </ContentPage>

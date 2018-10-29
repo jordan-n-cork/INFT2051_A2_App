@@ -7,12 +7,21 @@
     <ContentPage.Content>
         <StackLayout>
             
+            
+
+            <Grid x:Name="monthGrid">
+                
+                
+            </Grid>
+            
+            <!-- 
+            <Image Source="egMonthView.png" />
             <Label Text="Placeholder for Month View"
                 VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-
-            <Image Source="egMonthView.png" />
-
+            -->
         </StackLayout>
+
+        
     </ContentPage.Content>
     
 </ContentPage>
