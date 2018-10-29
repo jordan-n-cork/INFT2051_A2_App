@@ -20,10 +20,15 @@ namespace A2_AppProject.Pages.AddPages
 		public AddTask ()
 		{
 			InitializeComponent ();
-		}
+
+            
+        }
 
         public void UpdateTaskPreview ()
         {
+            // the aim of this function is to be called by the other cell entries to build a 
+            // detailed combined 'detail' section of the task preview.
+
             // build the string of other entry cells here
             
         }
@@ -37,36 +42,12 @@ namespace A2_AppProject.Pages.AddPages
                 various variables in the addtasks page
                 
              */
-            // test for switch cells
-            string switchResult = "";
-            if (AllDayBool.On)
-            {
-                switchResult = "All day event";
-                date1Pick.IsVisible = true;
-            } else
-            {
-                switchResult = "Specific Time";
-                date1Pick.IsVisible = false;
-            }
-
-            DisplayAlert("Alert", "The switch result is " + switchResult, "OK");
-
-            
 
             // quick replacement for the above debug code
             // date1Pick.IsVisible = !date1Pick.IsVisible;
 
             //TasksListData.Add(new Logic.quickListWork() { Name = "Button Made Item", Detail = "additional info goes here" });
-
-        }
-
-        // testing a boolean alert result  
-        void OnUpdateClicked(object sender, EventArgs e)
-        {
-
-
-
-
+            
             /*  testing out double alert answers
             var answer = await DisplayAlert("Question?", "Choose these two", "Yes", "No");
             // Debug.WriteLine("Answer: " + answer);
@@ -77,6 +58,8 @@ namespace A2_AppProject.Pages.AddPages
         void onNameEntered(object sender, EventArgs e)
         {
             TaskPreviewTitle.Text = entryEventName.Text;
+            entryEventDesc.Focus();
+            
         }
 
         void onDescEntered(object sender, EventArgs e)
@@ -84,5 +67,19 @@ namespace A2_AppProject.Pages.AddPages
             TaskPreviewDetail.Text = entryEventDesc.Text;
         }
 
+        private void AllDayBool_OnChanged(object sender, ToggledEventArgs e)
+        {
+            datePick2.IsVisible = !datePick2.IsVisible;
+            /*
+            if (AllDayBool.On)
+            {
+                datePick2.IsVisible = false;
+            }
+            else
+            {
+                datePick2.IsVisible = true;
+            }
+            */
+        }
     }
 }

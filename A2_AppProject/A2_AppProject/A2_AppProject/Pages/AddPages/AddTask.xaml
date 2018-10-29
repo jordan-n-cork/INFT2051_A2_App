@@ -28,34 +28,69 @@
                 </Frame>
             </StackLayout>
             
-            <TableView Intent="Form"
+            
+            <TableView Intent="Form" HasUnevenRows="True"
                 Margin="10, 0">
                 <TableRoot>
                     
-                    <TableSection Title="Enter Event information:">
-                        <EntryCell x:Name="entryEventName" Label="Event Name: "
-                               Placeholder = "" Completed="onNameEntered"/>
-                        <EntryCell x:Name="entryEventDesc" Label="Description: "
-                               Placeholder = "" Completed="onDescEntered"/>
+                    <TableSection> <!-- custom cell views for the event entries -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Event Name:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventName" HorizontalOptions="FillAndExpand"
+                                    Placeholder = "" ReturnType="Next" Completed="onNameEntered"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Description:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventDesc" HorizontalOptions="FillAndExpand"
+                                       Placeholder = "" ReturnType="Send" Completed="onDescEntered"/>
+                            </StackLayout>
+                        </ViewCell>
                     </TableSection>
-
                     <TableSection>
-                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool"  />
-                    </TableSection>
+                        
+                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool" On="True" OnChanged="AllDayBool_OnChanged"/>
+                        
+                        <ViewCell>
+                            
+                            <StackLayout>
 
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Date:" 
+                                           HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="datePick1" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                        Margin="10, 0" IsVisible="True"/>
+                                </StackLayout>
+                            
+                                <StackLayout Orientation="Horizontal" x:Name="datePick2" IsVisible="False">
+                                    <Label Text="Second Date:" 
+                                        HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker  Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                    Margin="10, 0"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                            
+                        
+                    
+            
+
+                    </TableSection>
                 </TableRoot>
             </TableView>
+
+            
             
                 <!-- intention is for the datepicker to expand when the switch is toggled -->
-            <DatePicker x:Name="date1Pick" Format="D"
-                VerticalOptions="CenterAndExpand"
-                Margin="10, 0" IsVisible="False"/>
+            
             
             <Button Text="Add Task"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
 
-            <Button Text="Update Preview"              
-                        VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnUpdateClicked" />
         </StackLayout>
         
         
