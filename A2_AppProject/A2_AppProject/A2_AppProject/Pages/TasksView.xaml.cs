@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 // needed for ObservableCollection
 using System.Collections.ObjectModel;
+using SQLite;
 
 namespace A2_AppProject.Pages
 {
@@ -16,12 +18,13 @@ namespace A2_AppProject.Pages
 	public partial class TasksView : ContentPage
 	{
 
-        ObservableCollection<Logic.quickListWork> TasksListData = new ObservableCollection<Logic.quickListWork>();
+        //ObservableCollection<Models.TaskItem> TasksListData = new ObservableCollection<Models.TaskItem>();
 
         public TasksView ()
 		{
 			InitializeComponent ();
 
+            /*
             // just a quick list build
             TasksList.ItemsSource = TasksListData;
 
@@ -29,23 +32,30 @@ namespace A2_AppProject.Pages
             for (int i = 0; i <= 3; i++)
             {
                 itemName = "Task " + (i + 1);
-                TasksListData.Add(new Logic.quickListWork() { Name = itemName, Detail = "info for " + itemName + " goes here" });
+                TasksListData.Add(new Models.TaskItem() { Name = itemName, Detail = "info for " + itemName + " goes here" });
 
             }
+            */
 
         }
 
-        private void OnAddItemButtonClicked(object sender, EventArgs e)
+        protected override async void OnAppearing()
         {
-            // code to test if list is able to add items
+            base.OnAppearing();
 
-            TasksListData.Add(new Logic.quickListWork() { Name = "Button Made Item", Detail = "additional info goes here" });
-
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            TasksListData.ItemsSource = await App.Database.GetItemsAsync();
         }
+
+       
 
         async void OnAddTaskButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Pages.AddPages.AddTask());
+            await Navigation.PushAsync(new Pages.AddPages.EditEvent()
+            {
+                BindingContext = new Models.TaskItem()
+            });
         }
     }
 }

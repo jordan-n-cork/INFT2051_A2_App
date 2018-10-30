@@ -3,14 +3,126 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="A2_AppProject.Pages.AddPages.EditEvent">
     <ContentPage.Content>
-        
-        
-        <!-- I want this page to be able to edit events and also convert from task>habit and vice versa -->
+
         <StackLayout>
-            <Label Text="Placeholder for editing an event"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <!-- attempting to preview the task 'banner' with a listView control tat is affected by c# code -->
+
+            <StackLayout Padding="10">
+                <Frame x:Name="TaskPreviewFrame"
+                    OutlineColor="Gray" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <!-- this will become the task icon -->
+                        <Image Source="TaskDone72x.png" 
+                               WidthRequest="54" HeightRequest="54" />
+                        <StackLayout>
+                            <Label x:Name="TaskPreviewTitle" Text="{Binding Name}"
+                                                    FontSize="22"
+                                                    VerticalOptions="StartAndExpand" />
+                            <Label x:Name="TaskPreviewDetail" Text="{Binding Detail}"
+                                                    FontSize="16"
+                                                    VerticalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+
+            <TableView Intent="Form" HasUnevenRows="True"
+                Margin="10, 0">
+                <TableRoot>
+
+                    <TableSection>
+                        <!-- custom cell views for the event entries -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Event Name:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventName" Text="{Binding Name}" HorizontalOptions="FillAndExpand"
+                                        ReturnType="Next" Completed="onNameEntered"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Description:" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Entry x:Name="entryEventDesc" HorizontalOptions="FillAndExpand"
+                                       Text="{Binding Detail}" ReturnType="Send" Completed="onDescEntered"/>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Completed" 
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Switch IsToggled="{Binding Done}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+                    <TableSection>
+                        <!-- Time Related Cells -->
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Time:" x:Name="FirstTime"
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <TimePicker x:Name="time1Picker"
+                                       Time="9:00" Format="T" />
+                            </StackLayout>
+
+                        </ViewCell>
+
+                        <!-- switch toggle for all day event / needs to change to time or full day -->
+                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool" 
+                                    On="True" OnChanged="AllDayBool_OnChanged"/>
+
+
+                    </TableSection>
+
+                    <TableSection >
+                        <!-- for when implementing multi day event
+                        <SwitchCell Text="Multi-day event?" x:Name="MultiDayBool" 
+                                    On="False" OnChanged="MultiDayBool_OnChanged" />
+                        -->
+                        <ViewCell>
+
+                            <StackLayout>
+
+                                <StackLayout Orientation="Horizontal" x:Name="datePick1Cell" IsVisible="True">
+                                    <Label Text="Date:" 
+                                           HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="datePicker1" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                        Margin="10, 0"/>
+                                </StackLayout>
+                                <!-- for when implementing multi day events 
+                                <StackLayout Orientation="Horizontal" x:Name="datePick2Cell" IsVisible="False">
+                                    <Label Text="Second Date:" 
+                                        HorizontalOptions="Start" VerticalOptions="Center"/>
+                                    <DatePicker x:Name="datePicker2" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                    Margin="10, 0"/>
+                                </StackLayout>
+                                -->
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+
+
+
+            <!-- intention is for the datepicker to expand when the switch is toggled -->
+
+
+            <Button Text="Add Task"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
+
+            <Button Text="Cancel" Clicked="OnCancelClicked" />
+
         </StackLayout>
+
+
     </ContentPage.Content>
-    
+
 </ContentPage>

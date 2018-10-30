@@ -47,6 +47,8 @@ namespace A2_AppProject
             }
         }
 
+        public int ResumeAtTodoId { get; set; }
+
     }
 
 

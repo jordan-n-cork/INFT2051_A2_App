@@ -11,17 +11,24 @@
         <StackLayout>
 
             <ScrollView VerticalOptions="FillAndExpand">    <!-- one problem here is when the listview goes over a certain amount it does not scroll down all the way-->
-                <ListView x:Name="TasksList">
+                <ListView x:Name="TasksListData">
                     <ListView.ItemTemplate>
                         <DataTemplate>
 
-                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
+                            
+
+                            <ViewCell>
+                                <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Image Source="TaskDone72x.png" HorizontalOptions="Start" IsVisible="{Binding Done}" />
+                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </ViewCell>
 
                             <!-- will eventually have the cell be a button to open event details -->
                             
                             <!-- the hide test elements spot 
                             
-                            
+                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
                             -->
                             
                         </DataTemplate>
@@ -30,8 +37,6 @@
             </ScrollView>
             
             <!-- Test button for list -->
-            <Button Text="Add List Item"              
-                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddItemButtonClicked" />
 
             <Button Text="XAML add item test"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
