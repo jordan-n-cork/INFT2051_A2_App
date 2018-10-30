@@ -57,5 +57,17 @@ namespace A2_AppProject.Pages
                 BindingContext = new Models.TaskItem()
             });
         }
+
+
+        async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new Pages.AddPages.EditEvent
+                {
+                    BindingContext = e.SelectedItem as Models.TaskItem
+                });
+            }
+        }
     }
 }

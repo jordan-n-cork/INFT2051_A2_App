@@ -13,8 +13,14 @@
                     OutlineColor="Gray" Padding="10">
                     <StackLayout Orientation="Horizontal">
                         <!-- this will become the task icon -->
-                        <Image Source="TaskDone72x.png" 
-                               WidthRequest="54" HeightRequest="54" />
+                        <Image Source="Task72x.png" 
+                               WidthRequest="54" HeightRequest="54" VerticalOptions="Center" >
+                            <Image.Triggers>
+                                <DataTrigger TargetType="Image" Binding="{Binding Done}" Value="True">  <!-- fix up so code behind checks the completed toggle -->
+                                    <Setter Property="Source" Value="TaskDone72x.png" />
+                                </DataTrigger>
+                            </Image.Triggers>
+                        </Image>
                         <StackLayout>
                             <Label x:Name="TaskPreviewTitle" Text="{Binding Name}"
                                                     FontSize="22"
@@ -22,6 +28,10 @@
                             <Label x:Name="TaskPreviewDetail" Text="{Binding Detail}"
                                                     FontSize="16"
                                                     VerticalOptions="CenterAndExpand" />
+                            
+                                    <!-- must add the rest of the info for the event -->
+                            
+                            
                         </StackLayout>
                     </StackLayout>
                 </Frame>
@@ -64,7 +74,7 @@
 
                         <ViewCell>
 
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal" IsVisible="{Binding !AllDayBool}">
                                 <Label Text="Time:" x:Name="FirstTime"
                                        HorizontalOptions="Start" VerticalOptions="Center"/>
                                 <TimePicker x:Name="time1Picker"
@@ -115,10 +125,12 @@
             <!-- intention is for the datepicker to expand when the switch is toggled -->
 
 
-            <Button Text="Add Task"              
-                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
+            <Button Text="Save Task"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnSaveTaskButtonClicked" />
 
-            <Button Text="Cancel" Clicked="OnCancelClicked" />
+            <Button Text="Delete"              
+                VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnDeleteTaskButtonClicked" />
+
 
         </StackLayout>
 

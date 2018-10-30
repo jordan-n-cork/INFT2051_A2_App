@@ -46,15 +46,25 @@ namespace A2_AppProject.Pages.AddPages
             */
         }
 
-        async void OnAddTaskButtonClicked(object sender, EventArgs e)
+
+        async void OnCancelClicked(object sender, EventArgs e)
         {
+            await Navigation.PopAsync();
+        }
+
+        async void OnSaveTaskButtonClicked(object sender, EventArgs e)
+        {
+            // will eventually have some sort of validation of input function linked here that 
+            // won't allow a task to be added if the input fields are not correct.
             var taskItem = (Models.TaskItem)BindingContext;
             await App.Database.SaveItemAsync(taskItem);
             await Navigation.PopAsync();
         }
 
-        async void OnCancelClicked(object sender, EventArgs e)
+        async void OnDeleteTaskButtonClicked(object sender, EventArgs e)
         {
+            var taskItem = (Models.TaskItem)BindingContext;
+            await App.Database.DeleteItemAsync(taskItem);
             await Navigation.PopAsync();
         }
     }

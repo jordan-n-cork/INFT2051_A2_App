@@ -108,7 +108,9 @@ G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\M
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.pdb
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\android\assets\System.Web.Services.pdb
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.pdb
+G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject\bin\Debug\netstandard2.0\A2_AppProject.dll
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\A2_AppProject.Android.pdb
+G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\bin\Debug\A2_AppProject.dll.mdb
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\A2_AppProject.dll.mdb
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 G:\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

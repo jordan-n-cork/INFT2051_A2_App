@@ -13,7 +13,7 @@
                 <Frame x:Name="TaskPreviewFrame"
                     OutlineColor="Gray" Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <!-- this will become the task icon -->
+                        <!-- this is the task preview -->
                         <Image Source="TaskDone72x.png" 
                                WidthRequest="54" HeightRequest="54" />
                         <StackLayout>

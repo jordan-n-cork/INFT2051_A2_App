@@ -11,25 +11,38 @@
         <StackLayout>
 
             <ScrollView VerticalOptions="FillAndExpand">    <!-- one problem here is when the listview goes over a certain amount it does not scroll down all the way-->
-                <ListView x:Name="TasksListData">
+                <ListView x:Name="TasksListData" ItemSelected="OnListItemSelected" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
 
-                            
-
                             <ViewCell>
-                                <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                    <Image Source="TaskDone72x.png" HorizontalOptions="Start" IsVisible="{Binding Done}" />
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" />
+                                <StackLayout Padding="10">
+                                    <Frame OutlineColor="Gray" Padding="10">
+                                        <StackLayout  Orientation="Horizontal">
+                                            <!-- this is the task preview -->
+                                            <StackLayout WidthRequest="40" HeightRequest="40" Orientation="Horizontal">
+                                                <Image Source="Task72x.png" 
+                                                        WidthRequest="35" HeightRequest="35" VerticalOptions="Center" >
+                                                    <Image.Triggers>
+                                                        <DataTrigger TargetType="Image" Binding="{Binding Done}" Value="True">
+                                                            <Setter Property="Source" Value="TaskDone72x.png" />
+                                                        </DataTrigger>
+                                                    </Image.Triggers>
+                                                </Image>
+                                            </StackLayout>
+                                            <StackLayout>
+                                                <Label x:Name="TaskPreviewTitle" Text="{Binding Name}"
+                                                    FontSize="16" VerticalOptions="StartAndExpand" />
+                                                <Label x:Name="TaskPreviewDetail" Text="{Binding Detail}"
+                                                    FontSize="11"
+                                                    VerticalOptions="CenterAndExpand" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
                                 </StackLayout>
                             </ViewCell>
 
                             <!-- will eventually have the cell be a button to open event details -->
-                            
-                            <!-- the hide test elements spot 
-                            
-                            <TextCell Text="{Binding Name}" Detail="{Binding Detail}"></TextCell>
-                            -->
                             
                         </DataTemplate>
                     </ListView.ItemTemplate>
@@ -40,6 +53,8 @@
 
             <Button Text="XAML add item test"              
                 VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="OnAddTaskButtonClicked" />
+
+            
 
 
         </StackLayout>
