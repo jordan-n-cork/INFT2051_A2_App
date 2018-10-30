@@ -9,13 +9,13 @@
 
             <!-- attempting to preview the task 'banner' with a listView control tat is affected by c# code -->
 
-            <StackLayout Padding="5"> 
-                <Frame OutlineColor="Accent"
-                                        Padding="10">
+            <StackLayout Padding="10"> 
+                <Frame x:Name="TaskPreviewFrame"
+                    OutlineColor="Gray" Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <BoxView Color="Blue"
-                                             WidthRequest="50"
-                                             HeightRequest="50" />
+                        <!-- this will become the task icon -->
+                        <Image Source="TaskDone72x.png" 
+                               WidthRequest="54" HeightRequest="54" />
                         <StackLayout>
                             <Label x:Name="TaskPreviewTitle" Text="test title"
                                                     FontSize="22"
@@ -32,8 +32,9 @@
             <TableView Intent="Form" HasUnevenRows="True"
                 Margin="10, 0">
                 <TableRoot>
-                    
-                    <TableSection> <!-- custom cell views for the event entries -->
+
+                    <TableSection>
+                        <!-- custom cell views for the event entries -->
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Event Name:" 
@@ -51,35 +52,54 @@
                             </StackLayout>
                         </ViewCell>
                     </TableSection>
+
                     <TableSection>
+                        <!-- Time Related Cells -->
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Time:" x:Name="FirstTime"
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <TimePicker x:Name="time1Picker"                                       Time="9:00" Format="T" />
+                            </StackLayout>
+
+                        </ViewCell>
+
+                        <!-- switch toggle for all day event / needs to change to time or full day -->
+                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool" 
+                                    On="True" OnChanged="AllDayBool_OnChanged"/>
                         
-                        <SwitchCell Text="All Day Event?" x:Name="AllDayBool" On="True" OnChanged="AllDayBool_OnChanged"/>
                         
+                    </TableSection>
+
+                    <TableSection >
+                        <!-- for when implementing multi day event
+                        <SwitchCell Text="Multi-day event?" x:Name="MultiDayBool" 
+                                    On="False" OnChanged="MultiDayBool_OnChanged" />
+                        -->
                         <ViewCell>
                             
                             <StackLayout>
 
-                                <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal" x:Name="datePick1Cell" IsVisible="True">
                                     <Label Text="Date:" 
                                            HorizontalOptions="Start" VerticalOptions="Center"/>
-                                    <DatePicker x:Name="datePick1" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
-                                        Margin="10, 0" IsVisible="True"/>
+                                    <DatePicker x:Name="datePicker1" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                        Margin="10, 0"/>
                                 </StackLayout>
-                            
-                                <StackLayout Orientation="Horizontal" x:Name="datePick2" IsVisible="False">
+                                <!-- for when implementing multi day events 
+                                <StackLayout Orientation="Horizontal" x:Name="datePick2Cell" IsVisible="False">
                                     <Label Text="Second Date:" 
                                         HorizontalOptions="Start" VerticalOptions="Center"/>
-                                    <DatePicker  Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
+                                    <DatePicker x:Name="datePicker2" Format="D" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"
                                     Margin="10, 0"/>
                                 </StackLayout>
+                                -->
                             </StackLayout>
                         </ViewCell>
-                            
-                        
-                    
-            
-
                     </TableSection>
+                    
                 </TableRoot>
             </TableView>
 

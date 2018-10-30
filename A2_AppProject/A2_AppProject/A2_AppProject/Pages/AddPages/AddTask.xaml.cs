@@ -15,6 +15,8 @@ namespace A2_AppProject.Pages.AddPages
         // public variables I want to access in the app
         //string TaskPreviewName;
         //string TaskPreviewDetail;
+        //string TaskLocation;
+        //string TaskDescription;
       
 
 		public AddTask ()
@@ -67,9 +69,9 @@ namespace A2_AppProject.Pages.AddPages
             TaskPreviewDetail.Text = entryEventDesc.Text;
         }
 
-        private void AllDayBool_OnChanged(object sender, ToggledEventArgs e)
+        public void AllDayBool_OnChanged(object sender, ToggledEventArgs e)
         {
-            datePick2.IsVisible = !datePick2.IsVisible;
+            datePick1Cell.IsVisible = !datePick1Cell.IsVisible;
             /*
             if (AllDayBool.On)
             {
@@ -81,5 +83,11 @@ namespace A2_AppProject.Pages.AddPages
             }
             */
         }
+        /* 
+        private void MultiDayBool_OnChanged(object sender, ToggledEventArgs e)
+        {
+            datePick2Cell.IsVisible = !datePick2Cell.IsVisible;
+        }
+        */
     }
 }

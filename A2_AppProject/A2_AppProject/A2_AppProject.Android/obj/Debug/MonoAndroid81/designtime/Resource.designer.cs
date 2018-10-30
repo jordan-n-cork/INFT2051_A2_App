@@ -2364,25 +2364,22 @@ namespace A2_AppProject.Droid
 			public const int design_snackbar_background = 2131296347;
 			
 			// aapt resource value: 0x7F010002
-			public const int egAddHabit = 2130771970;
+			public const int egMonthView = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int egAddToDo = 2130771971;
+			public const int egTodayView = 2130771971;
 			
 			// aapt resource value: 0x7F010004
-			public const int egMonthView = 2130771972;
+			public const int egTodayView2 = 2130771972;
 			
 			// aapt resource value: 0x7F010005
-			public const int egTodayView = 2130771973;
+			public const int egTodayView3 = 2130771973;
 			
 			// aapt resource value: 0x7F010006
-			public const int egTodayView2 = 2130771974;
+			public const int HabitOutline = 2130771974;
 			
 			// aapt resource value: 0x7F010007
-			public const int egTodayView3 = 2130771975;
-			
-			// aapt resource value: 0x7F010008
-			public const int HabitsView = 2130771976;
+			public const int HabitsView = 2130771975;
 			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
@@ -2915,8 +2912,8 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010009
-			public const int MonthView = 2130771977;
+			// aapt resource value: 0x7F010008
+			public const int MonthView = 2130771976;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -3017,8 +3014,11 @@ namespace A2_AppProject.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
+			// aapt resource value: 0x7F010009
+			public const int Task72x = 2130771977;
+			
 			// aapt resource value: 0x7F010010
-			public const int TasksAddIcon = 2130771984;
+			public const int TaskDone72x = 2130771984;
 			
 			// aapt resource value: 0x7F010011
 			public const int TasksListIcon = 2130771985;
