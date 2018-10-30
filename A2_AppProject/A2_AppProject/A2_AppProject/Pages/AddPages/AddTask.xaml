@@ -61,7 +61,8 @@
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Time:" x:Name="FirstTime"
                                        HorizontalOptions="Start" VerticalOptions="Center"/>
-                                <TimePicker x:Name="time1Picker"                                       Time="9:00" Format="T" />
+                                <TimePicker x:Name="time1Picker"
+                                       Time="9:00" Format="T" />
                             </StackLayout>
 
                         </ViewCell>

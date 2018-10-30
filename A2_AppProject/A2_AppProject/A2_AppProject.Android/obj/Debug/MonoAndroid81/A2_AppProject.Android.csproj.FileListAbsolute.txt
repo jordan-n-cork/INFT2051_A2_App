@@ -108,9 +108,7 @@ C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\res\drawable\task72x.png
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\res\drawable\taskdone72x.png
-C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject\bin\Debug\netstandard2.0\A2_AppProject.dll
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\A2_AppProject.Android.pdb
-C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\bin\Debug\A2_AppProject.dll.mdb
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\A2_AppProject.dll.mdb
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\Github\INFT2051_A2_App\A2_AppProject\A2_AppProject\A2_AppProject.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
