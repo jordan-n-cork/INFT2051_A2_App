@@ -6,8 +6,8 @@
        INFT2051 - Assignment 2 
    Group Y
        James Rossington    3187654
-       Ylan Ballouka       xxxxxxx
-       Jordan Cork         xxxxxxx
+       Ylan Ballouka       3313681
+       Jordan Cork         3252161
    
    This mobile application attempts to provide the user with
    a functional calendar with some usability extensions,
@@ -25,15 +25,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:A2_AppProject.Pages"
              x:Class="A2_AppProject.MainPage" >
 
-    <!-- instances(?) of content pages making up the tabbed page 
-
-    <local:TodayView />     has to be the name of the x.xaml page to load it as content page 
-
-    <local:TasksView />
-
-    <local:HabitsView />
-
-    -->
 
     <!-- wraps the content page views in a navigation page -->
     <NavigationPage Title="Today View" Icon="MonthView.png">            <!-- currently loads icon from the android project Resources/drawable folder with build action set -->

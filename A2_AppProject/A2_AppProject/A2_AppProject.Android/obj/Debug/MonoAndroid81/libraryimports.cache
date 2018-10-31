@@ -21,7 +21,6 @@
   <NativeLibraries />
   <Jars>
     <Jar>obj\\Debug\MonoAndroid81\lp\1\jl\formsviewgroup.jar</Jar>
-    <Jar>obj\\Debug\MonoAndroid81\lp\9\jl\arch-core-common.jar</Jar>
     <Jar>obj\\Debug\MonoAndroid81\lp\10\jl\arch-lifecycle-common.jar</Jar>
     <Jar>obj\\Debug\MonoAndroid81\lp\11\jl\bin\classes.jar</Jar>
     <Jar>obj\\Debug\MonoAndroid81\lp\12\jl\bin\classes.jar</Jar>
@@ -40,5 +39,6 @@
     <Jar>obj\\Debug\MonoAndroid81\lp\25\jl\bin\classes.jar</Jar>
     <Jar>obj\\Debug\MonoAndroid81\lp\26\jl\bin\classes.jar</Jar>
     <Jar>obj\\Debug\MonoAndroid81\lp\27\jl\bin\classes.jar</Jar>
+    <Jar>obj\\Debug\MonoAndroid81\lp\9\jl\arch-core-common.jar</Jar>
   </Jars>
 </Paths>

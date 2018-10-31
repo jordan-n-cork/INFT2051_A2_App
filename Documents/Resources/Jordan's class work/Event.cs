@@ -44,9 +44,12 @@ namespace A2_AppProject
 
         [MaxLength(4)]
         public string Time { get; set; }
+		
+		public bool AllDay { get; set; }
 
         // Alert Booleans
-        public bool AllDay { get; set; }
+		/*	un-commenting these as I add functionality 
+        
 
         public string Location { get; set; }
 
@@ -72,6 +75,7 @@ namespace A2_AppProject
         public bool RepeatMonth { get; set; }
 
         public bool RepeatYear { get; set; }
+		*/
 
     }
 }

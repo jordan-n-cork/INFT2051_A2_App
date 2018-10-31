@@ -10,21 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ExampleImages\egAddHabit.png" />
-    <None Remove="ExampleImages\egAddToDo.png" />
-    <None Remove="ExampleImages\egMonthView.png" />
-    <None Remove="ExampleImages\egTodayView.png" />
-    <None Remove="ExampleImages\egTodayView2.png" />
-    <None Remove="ExampleImages\egTodayView3.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ApplicationDefinition Include="ExampleImages\egAddHabit.png" />
-    <ApplicationDefinition Include="ExampleImages\egAddToDo.png" />
-    <ApplicationDefinition Include="ExampleImages\egMonthView.png" />
-    <ApplicationDefinition Include="ExampleImages\egTodayView.png" />
-    <ApplicationDefinition Include="ExampleImages\egTodayView2.png" />
-    <ApplicationDefinition Include="ExampleImages\egTodayView3.png" />
+    <Compile Remove="Database\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <None Remove="Database\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -60,9 +48,5 @@
     <EmbeddedResource Update="Pages\TodayView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Database\" />
   </ItemGroup>
 </Project>

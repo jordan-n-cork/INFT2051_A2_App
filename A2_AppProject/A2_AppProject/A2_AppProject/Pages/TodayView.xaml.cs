@@ -17,12 +17,13 @@ namespace A2_AppProject.Pages
 	public partial class TodayView : ContentPage
 	{
         // this is for the listview, it will continually update the Listview property with array data
-        ObservableCollection<Logic.quickListWork> QuickList = new ObservableCollection<Logic.quickListWork>();
+        // ObservableCollection<Logic.quickListWork> QuickList = new ObservableCollection<Logic.quickListWork>();
 
         public TodayView ()
 		{
 			InitializeComponent ();
 
+            /* Changing this whole thing to use SQL
             // just a quick list build
             // testing out observable collection
             TodayViewList.ItemsSource = QuickList;
@@ -42,7 +43,7 @@ namespace A2_AppProject.Pages
                 QuickList.Add(new Logic.quickListWork() { Name = timeSlot, Detail = "info for " + timeSlot + " goes here" });
             }
 
-            /*  The other ways of adding items to the list
+            //  The other ways of adding items to the list
             ObservableCollection<Logic.quickListWork> QuickList = new ObservableCollection<Logic.quickListWork>();
             TodayViewList.ItemsSource = QuickList;
             QuickList.Add(new Logic.quickListWork() { Name = "Item 1", Detail = "additional info goes here" });

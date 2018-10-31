@@ -45,6 +45,9 @@ namespace A2_AppProject.Pages
 
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtTodoId = -1;
+
+            // this requests the database as detailed in app.xaml.cs
+            // will need to change the config to Jordan's classes
             TasksListData.ItemsSource = await App.Database.GetItemsAsync();
         }
 
